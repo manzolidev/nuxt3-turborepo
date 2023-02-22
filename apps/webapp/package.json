@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "nuxt": "^3.2.2",
-    "@volar-plugins/vetur": "latest"
+    "@volar-plugins/vetur": "latest",
+    "@agency/ui": "*"
   }
 }

@@ -1,5 +1,7 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <AgencyButton>
+      App 2
+    </AgencyButton>
   </div>
 </template>

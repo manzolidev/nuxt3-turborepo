@@ -16,5 +16,14 @@ describe('UI Button', () => {
     });
     const button = wrapper.find('button');
     expect(button.element.disabled).toBe(true);
-  })
+  });
+
+  it("emits the correct text when clicked", async () => {
+    const wrapper = mount(Button);
+    const button = wrapper.find('button');
+    await button.trigger('click');
+    expect(
+      (wrapper.emitted()['click'][0] as Array<Array<string>>)[0]
+    ).toBe('hello from button');
+  });
 })
